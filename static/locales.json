@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "admin": {
+      "id": 1,
+      "email": "asd@asd.com",
+      "password": "facil123",
+      "accType": 1,
+      "status": 1
+    },
+    "address": "Calle Mártir José Olaya 114",
+    "description": "Cancha 1",
+    "latitude": -12.12,
+    "longitude": -77.0302,
+    "created_at": "2019-05-31 23:17:51.0",
+    "updated_at": "2019-05-31 23:17:51.0",
+    "deleted_at": null,
+    "status": 1
+  },
+  {
+    "id": 2,
+    "admin": {
+      "id": 1,
+      "email": "asd@asd.com",
+      "password": "facil123",
+      "accType": 1,
+      "status": 1
+    },
+    "address": "Miraflores 15074",
+    "description": "Cancha 2",
+    "latitude": -12.1229,
+    "longitude": -77.0329,
+    "created_at": "2019-05-31 23:17:51.0",
+    "updated_at": "2019-05-31 23:17:51.0",
+    "deleted_at": null,
+    "status": 1
+  },
+  {
+    "id": 3,
+    "admin": {
+      "id": 1,
+      "email": "asd@asd.com",
+      "password": "facil123",
+      "accType": 1,
+      "status": 1
+    },
+    "address": "Av Jose Larco 770",
+    "description": "Cancha 3",
+    "latitude": -12.1256,
+    "longitude": -77.0293,
+    "created_at": "2019-05-31 23:17:51.0",
+    "updated_at": "2019-05-31 23:17:51.0",
+    "deleted_at": null,
+    "status": 1
+  }
+]
