@@ -10,7 +10,7 @@ export default {
       default: () => []
     },
     active: {
-      type: String,
+      type: Object,
       default: null
     }
   },
@@ -94,6 +94,7 @@ export default {
 }
 .mapboxgl-popup-content {
   font:400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+  font-family: theme('fontFamily.sans');
   padding:0;
   width:180px;
 }

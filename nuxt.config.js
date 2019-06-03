@@ -16,10 +16,7 @@ export default {
     link: [
       // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'icon', type: 'image/png', href: '/ball-marker.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap' }
-    ],
-    script: [
-      { src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBDawRaPnurJ7TWktjC0a0FRuxsFeYD9UY' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat&display=swap' }
     ]
   },
 

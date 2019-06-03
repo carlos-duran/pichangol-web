@@ -28,7 +28,7 @@ export default {
       default: () => []
     },
     active: {
-      type: String,
+      type: Object,
       default: null
     }
   }
