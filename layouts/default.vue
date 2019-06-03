@@ -1,10 +1,14 @@
 <template>
-  <div class="font-sans">
+  <div class="h-full font-sans">
     <nuxt />
   </div>
 </template>
 
 <style lang="postcss">
+html, body, #__nuxt, #__layout {
+  height: 100%;
+}
+
 body {
   background-position: center;
   background-color: #eeeeee;

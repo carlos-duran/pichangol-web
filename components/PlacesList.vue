@@ -1,6 +1,6 @@
 <template>
   <div class="hidden sm:block p-2 sm:p-0 fixed sm:static z-10 w-full sm:max-w-xs lg:max-w-sm">
-    <div class="bg-white h-full">
+    <div class="bg-white h-full overflow-auto">
       <div
         v-for="(place, i) in places"
         :key="place.id"

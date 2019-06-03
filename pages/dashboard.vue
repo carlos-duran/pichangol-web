@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-grey-500 flex flex-col">
+  <div class="h-full bg-grey-500 flex flex-col">
     <TheNavbar />
     <div class="flex-1 flex flex-col sm:flex-row justify-stretch">
       <PlacesList :places="places" :active.sync="active" />
