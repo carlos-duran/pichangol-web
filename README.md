@@ -23,7 +23,7 @@ $ npm run dev
 # build for production
 $ npm run build
 
-# deploy (Only Carlos Duran)
+# deploy (Only Carlos Duran) (you can deploy to another domain, visit surge.sh)
 $ npm run deploy
 ```
 
