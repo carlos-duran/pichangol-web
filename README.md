@@ -5,18 +5,26 @@
 ## Build Setup
 
 ``` bash
+# Ensure you have Node 12
+$ node -v
+
+# Duplicate the .env.example file and rename it to .env
+$ cp .env.example .env
+
+# Generate a Mapbox access token and set it to the .env file
+https://www.mapbox.com/
+
 # install dependencies
 $ npm install
 
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
+# build for production
 $ npm run build
-$ npm start
 
-# generate static project
-$ npm run generate
+# deploy (Only Carlos Duran)
+$ npm run deploy
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
