@@ -1,29 +1,33 @@
 <template>
-  <div class="h-full bg-grey-500 flex flex-col">
-    <TheNavbar />
-    <div class="flex-1 flex flex-col sm:flex-row justify-stretch">
-      <PlacesList :places="places" :active.sync="active" />
-      <PlacesMap ref="map" :places="places" :active.sync="active" class="flex-1" />
-    </div>
+  <div class="flex-1 flex flex-col sm:flex-row justify-stretch">
+    <PlacesList :places="places" :active.sync="active" />
+    <PlacesMap ref="map" :places="places" :active.sync="active" class="flex-1" />
   </div>
 </template>
 
 <script>
 import axios from 'axios'
-import TheNavbar from '~/components/TheNavbar'
 import PlacesMap from '~/components/PlacesMap'
 import PlacesList from '~/components/PlacesList'
 
 export default {
   components: {
-    TheNavbar,
     PlacesMap,
     PlacesList
   },
   data() {
     return {
-      places: [],
-      active: null
+      places: []
+    }
+  },
+  computed: {
+    active: {
+      set(v) {
+        this.$router.push('/' + v.id)
+      },
+      get() {
+        return this.places.find(p => p.id === parseInt(this.$route.params.local, 10))
+      }
     }
   },
   async mounted() {
@@ -40,3 +44,7 @@ export default {
   }
 }
 </script>
+
+<style>
+
+</style>

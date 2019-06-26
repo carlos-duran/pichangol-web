@@ -1,0 +1,59 @@
+{
+  "id": 12,
+  "name": "xd",
+  "latitude": 0.345345,
+  "address": "asdasd",
+  "workingWeekDays": [
+    {
+      "day": 1,
+      "start": 8,
+      "end": 23
+    },
+    {
+      "day": 2,
+      "start": 8,
+      "end": 20
+    }
+  ],
+  "courts": [
+    {
+      "id": "asdasd",
+      "area": 25.6,
+      "picture": "http://cancha.com/asdasd.jpg",
+      "reserved": [
+        {
+          "day": 1,
+          "start": 8,
+          "end": 10
+        },
+        {
+          "day": 1,
+          "start": 11,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "asdasd2",
+      "area": 25.6,
+      "reserved": []
+    },
+    {
+      "id": "asdasd3",
+      "area": 25.6,
+      "reserved": [
+        {
+          "day": 1,
+          "start": 8,
+          "end": 10
+        },
+        {
+          "day": 1,
+          "start": 11,
+          "end": 15
+        }
+      ]
+    }
+  ]
+}
+

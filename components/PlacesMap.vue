@@ -58,14 +58,14 @@ export default {
     },
     flyToPlace(place) {
       this.map.flyTo({
-        center: [place.longitude, place.latitude],
-        zoom: 17
+        center: place ? [place.longitude, place.latitude] : [-77.02843, -12.12236],
+        zoom: place ? 17 : 15
       })
     },
     createPopUp(place) {
       const popUps = document.getElementsByClassName('mapboxgl-popup')
       if (popUps[0]) popUps[0].remove()
-
+      if (!place) return
       new this.$mapboxgl.Popup({ closeOnClick: false })
         .setLngLat([place.longitude, place.latitude])
         .setHTML(`<h3>${place.description}</h3><h4>${place.address}</h4>`)
