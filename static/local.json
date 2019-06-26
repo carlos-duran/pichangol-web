@@ -1,0 +1,92 @@
+{
+  "id": 1,
+  "nombre": "Polideportivo Sede Norte",
+  "address": "Francisco de Paula Camino 220",
+  "latitude": "-12.1208",
+  "longitude": "-77.0321",
+  "listWorDays": [
+    {
+      "day": 1,
+      "start": 7,
+      "end": 22
+    },
+    {
+      "day": 2,
+      "start": 7,
+      "end": 22
+    },
+    {
+      "day": 3,
+      "start": 7,
+      "end": 22
+    },
+    {
+      "day": 4,
+      "start": 7,
+      "end": 22
+    },
+    {
+      "day": 5,
+      "start": 7,
+      "end": 22
+    },
+    {
+      "day": 6,
+      "start": 7,
+      "end": 22
+    },
+    {
+      "day": 7,
+      "start": 7,
+      "end": 22
+    }
+  ],
+  "listNonDays": [
+    {
+      "date": "2019-06-29",
+      "reasion": "Día de San Pedro y San Pablo"
+    },
+    {
+      "date": "2019-07-28",
+      "reasion": "Independencia del Perú"
+    },
+    {
+      "date": "2019-07-29",
+      "reasion": "Fiesta de la Independencia del Perú"
+    },
+    {
+      "date": "2019-07-30",
+      "reasion": "Declarado no laborable"
+    },
+    {
+      "date": "2019-08-30",
+      "reasion": "Festividad de Santa Rosa de Lima"
+    }
+  ],
+  "listSocField": [
+    {
+      "id": 1,
+      "description": "Cancha 1 Miraflores",
+      "price": 80.0,
+      "reservedDTOs": []
+    },
+    {
+      "id": 2,
+      "description": "Cancha 2 Miraflores",
+      "price": 80.0,
+      "reservedDTOs": null
+    },
+    {
+      "id": 3,
+      "description": "Cancha 3 Miraflores",
+      "price": 80.0,
+      "reservedDTOs": []
+    },
+    {
+      "id": 4,
+      "description": "Cancha 4 Miraflores",
+      "price": 80.0,
+      "reservedDTOs": null
+    }
+  ]
+}

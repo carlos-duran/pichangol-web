@@ -37,6 +37,10 @@ export default {
         zoom: 10
       })
       this.map.flyTo({ zoom: 15 })
+      if (this.places.length && !this.markers.length) {
+        this.createMarkers()
+        if (this.active) this.useActive()
+      }
     },
     createMarkers() {
       this.markers.forEach(m => m.remove())

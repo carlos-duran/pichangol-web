@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden sm:block p-2 sm:p-0 fixed sm:static z-10 w-full sm:max-w-xs lg:max-w-sm">
+  <div class="hidden sm:block p-2 sm:p-0 fixed sm:static z-10 w-full h-full sm:max-w-xs lg:max-w-sm">
     <div class="bg-white h-full overflow-auto">
       <div
         v-for="(place, i) in places"
@@ -12,7 +12,7 @@
         @click="$emit('update:active', place)"
       >
         <h2 class="text-xl font-bold text-secondary">
-          {{ place.description }}
+          {{ place.name }}
         </h2>
         <p>{{ place.address }}</p>
       </div>
