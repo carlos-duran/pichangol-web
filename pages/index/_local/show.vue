@@ -65,6 +65,7 @@ import axios from 'axios'
 import moment from 'moment'
 import uniq from 'lodash/uniq'
 import map from 'lodash/map'
+import sortBy from 'lodash/sortBy'
 import groupBy from 'lodash/groupBy'
 const weekDays = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom']
 
@@ -73,7 +74,7 @@ export default {
     return {
       placeDetail: null,
       date: new Date(),
-      selectedDay: new Date().getDay()
+      selectedDay: moment().isoWeekday()
     }
   },
   computed: {
@@ -88,8 +89,8 @@ export default {
     },
     workingDays() {
       if (!this.placeDetail) return []
-      let wdays = uniq(map(this.placeDetail.listWorDays, 'day'))
-      const today = new Date().getDay()
+      let wdays = sortBy(uniq(map(this.placeDetail.listWorDays, 'day')))
+      const today = moment().isoWeekday()
       const prox = wdays.findIndex(d => d >= today)
       if (prox > -1) {
         wdays = wdays.slice(prox).concat(wdays.slice(0, prox))
@@ -115,7 +116,9 @@ export default {
       }
     },
     getNextDate(wday) {
-      return moment().day(wday).date()
+      const time = moment()
+      if (time.isoWeekday() > wday) time.add(1, 'week')
+      return time.isoWeekday(wday).date()
     }
   }
 }
